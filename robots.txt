@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace YOUR-SITE-NAME with the final Netlify subdomain after deployment.
+Sitemap: https://YOUR-SITE-NAME.netlify.app/sitemap.xml

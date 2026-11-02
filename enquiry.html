@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make a product or celebration enquiry with Golden Crust Bakery.">
+    <title>Golden Crust Bakery | Enquiry</title>
+    <meta name="theme-color" content="#3b2418">
+    <meta property="og:site_name" content="Golden Crust Bakery">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Golden Crust Bakery | Freshly Baked in Pretoria">
+    <meta property="og:description" content="Explore bakery favourites, enquire about celebration orders and contact Golden Crust Bakery.">
+    <meta property="og:image" content="images/bakery-hero.svg">
+    <link rel="icon" href="images/bakery-hero.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="logo" href="index.html">Golden <span>Crust</span> Bakery</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a class="active" href="enquiry.html" aria-current="page">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+<section class="page-heading">
+    <div class="container">
+        <h1>Make an Enquiry</h1>
+        <p>Have a question about a product or celebration order? Complete the form below.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <form class="form-card" id="enquiry-form" action="#" method="post" novalidate>
+            <p class="form-note">Complete the details below. This demonstration provides an indicative estimate only; it is not a confirmed order or live stock check.</p>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="70" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" pattern="[+]?[0-9 ()-]{7,20}" placeholder="e.g. 082 123 4567" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Enquiry type</label>
+                    <select id="type" name="type" required>
+                        <option value="">Please choose</option>
+                        <option value="product">Product question</option>
+                        <option value="order">Order enquiry</option>
+                        <option value="celebration">Celebration cake</option>
+                        <option value="volunteer">Volunteer opportunity</option>
+                        <option value="sponsor">Sponsorship</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity (if ordering)</label>
+                    <input id="quantity" name="quantity" type="number" min="1" max="100" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="needed-date">Date needed (optional)</label>
+                    <input id="needed-date" name="neededDate" type="date">
+                </div>
+                <div class="form-group full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" minlength="10" maxlength="1000" rows="5" placeholder="Tell us what you need, including flavours, sizes or event details..." required></textarea>
+                </div>
+            </div>
+
+            <div class="form-submit">
+                <button class="button button-primary" type="submit">Check Enquiry Estimate</button>
+                <button class="button button-secondary" type="reset">Clear form</button>
+            </div>
+            <div id="enquiry-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+        </form>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>&copy; 2026 Golden Crust Bakery. Student project concept.</p>
+        <div class="footer-links">
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>
